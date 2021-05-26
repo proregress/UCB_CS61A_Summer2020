@@ -1,0 +1,77 @@
+$ python3 ok -q python-basics -u
+=====================================================================
+Assignment: Lab 0
+OK, version v1.18.1
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Unlocking tests
+
+At each "? ", type what you would expect the output to be.
+Type exit() to quit
+
+---------------------------------------------------------------------
+Python Basics > Suite 1 > Case 1
+(cases remaining: 2)
+
+What would Python display? If you get stuck, try it out in the Python
+interpreter!
+
+>>> 10 + 2
+? 12
+-- OK! --
+
+>>> 7 / 2
+? 3.5
+-- OK! --
+
+>>> 7 // 2
+? 3
+-- OK! --
+
+>>> 7 % 2			# 7 modulo 2, equivalent to the remainder of 7 // 2
+? 1
+-- OK! --
+
+---------------------------------------------------------------------
+Python Basics > Suite 2 > Case 1
+(cases remaining: 1)
+
+What would Python display? If you get stuck, try it out in the Python
+interpreter!
+
+>>> x = 20
+>>> x + 2
+? 22
+-- OK! --
+
+>>> x
+? 20
+-- OK! --
+
+>>> y = 5
+>>> y += 3			# Equivalent to y = y + 3
+>>> y * 2
+? 10
+-- Not quite. Try again! --
+
+? 
+-- Not quite. Try again! --
+
+? 16
+-- OK! --
+
+>>> y //= 4			# Equivalent to y = y // 4
+>>> y + x
+? 22
+-- OK! --
+
+---------------------------------------------------------------------
+OK! All cases for Python Basics unlocked.
+
+Performing authentication
+Please enter your school email (.edu): --local
+Successfully logged in as ____@163.com
+Backup... 100% complete
+Backup past deadline by 333 days, 8 hours, 58 minutes, and 21 seconds
+Backup successful for user: ____@163.com
