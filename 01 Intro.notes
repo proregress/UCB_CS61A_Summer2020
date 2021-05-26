@@ -1,0 +1,20 @@
+Lab0 highlights:
+  Expressions and statements
+    Programs are made up of expressions and statements
+    An expression is a piece of code that evaluates to some value 
+      Primitive expressions
+      Arithmetic expressions
+    A statement is one or more lines of code that make something happen in a program
+      Assignment statements赋值语句
+      ——consists of a name and an expression
+      ——changes the state of the program by evaluating the expression and binding its value to the name in the current frame.
+
+Slides outlines:
+  1. Manage complexity
+    1.1 Mastering abstraction
+    1.2 Programming paradigms编程范式
+  2. call expression 调用表达式
+    2.1 nested call expression
+    2.2 operator & operand
+    2.3 Expression Tree
+  3. A Shakespeare demo
