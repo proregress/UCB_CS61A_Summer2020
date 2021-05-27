@@ -1,0 +1,9 @@
+https://pypi.org/
+
+pypi 是 Python Package Index 的首字母简写，Python 官方的 Packag 索引。类似 Java 的 Maven。
+
+使用命令行语句安装package：
+pip install yfinance
+
+具体有关模块安装使用的内容，可参考：
+https://www.cwiki.us/display/PythonZH/Installing+Python+Modules
