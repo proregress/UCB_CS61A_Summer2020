@@ -1,5 +1,5 @@
 1. Expressions:
-  1.1 primitive expressions:numbers/ numerals
+  1.1 primitive expressions:numbers/ numerals/ strings
   1.2 compound expressions: expressions representing numbers may be combined with mathematical operators to form a compound expression
       1.2.1 call expression: it applies a function to some arguments
       1.2.2 nested expression 
@@ -13,3 +13,5 @@
         In addition to returning a value, applying a non-pure function can generate side effects, which make some change to the state of the interpreter or computer.
         >>>print(-2)
         The value that print returns is always None.
+
+### 4. http://pythontutor.com/composingprograms.html#mode=display Online python tutor, displaying step by step.
