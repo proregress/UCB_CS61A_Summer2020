@@ -5,7 +5,7 @@
       1.2.2 nested expression 
 2. Expression Tree
 
-3. The Non-Pure Print Function
+### 3. The Non-Pure Print Function
     3.1 Pure functions
         Pure functions have the property that applying them has no effects beyond returning a value. 
         >>>abs(-2） 
