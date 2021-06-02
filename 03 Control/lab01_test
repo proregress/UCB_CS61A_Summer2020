@@ -109,4 +109,74 @@ OK! All cases for Veritasiness unlocked.
 
 Backup... 100% complete
 Backup past deadline by 339 days, 8 hours, 40 minutes, and 57 seconds
-Backup successful for user: ____@163.com
+Backup successful for user: ____
+
+
+Q6: WWPD: What If?
+$ python3 ok -q if-statements -u
+=====================================================================
+Assignment: Lab 1
+OK, version v1.18.1
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Unlocking tests
+
+At each "? ", type what you would expect the output to be.
+Type exit() to quit
+
+---------------------------------------------------------------------
+What If? > Suite 1 > Case 1
+(cases remaining: 2)
+
+What would Python display? If you get stuck, try it out in the Python
+interpreter!
+
+>>> def ab(c, d):
+...     if c > 5:
+...         print(c)
+...     elif c > 7:
+...         print(d)
+...     print('foo')
+>>> ab(10, 20)
+(line 1)? 10
+(line 2)? foo
+-- OK! --
+
+---------------------------------------------------------------------
+What If? > Suite 1 > Case 2
+(cases remaining: 1)
+
+What would Python display? If you get stuck, try it out in the Python
+interpreter!
+
+>>> def bake(cake, make):
+...    if cake == 0:
+...        cake = cake + 1
+...        print(cake)
+...    if cake == 1:
+...        print(make)
+...    else:
+...        return cake
+...    return make
+>>> bake(0, 29)
+(line 1)? 1
+(line 2)? 29
+(line 3)? 29
+-- OK! --
+
+>>> bake(1, "mashed potatoes")
+(line 1)? mashed potatoes
+(line 2)? mashed potatoes
+-- Not quite. Try again! --
+
+(line 1)? mashed potatoes
+(line 2)? "mashed potatoes"
+-- OK! --
+
+---------------------------------------------------------------------
+OK! All cases for What If? unlocked.
+
+Backup... 100% complete
+Backup past deadline by 340 days, 8 hours, 27 minutes, and 44 seconds
+Backup successful for user: ____
