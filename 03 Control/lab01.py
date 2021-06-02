@@ -47,6 +47,34 @@ def sum_digits(y):
     return sum
 
 
+# Q7: Double Eights
+def double_eights(n):
+    """Return true if n has two eights in a row.
+    >>> double_eights(8)
+    False
+    >>> double_eights(88)
+    True
+    >>> double_eights(2882)
+    True
+    >>> double_eights(880088)
+    True
+    >>> double_eights(12345)
+    False
+    >>> double_eights(80808080)
+    False
+    """
+    "*** YOUR CODE HERE ***" 
+    i = 0
+    while n // (pow(10,i)) != 0:
+        dig1 =( n // (pow(10,i)) ) % 10
+        dig2 =( n // (pow(10,i+1)) ) % 10
+        if dig1 == dig2 ==8:
+            return True
+        else:
+            i += 1
+    return False
+
+
 
 $ python3 ok -q falling
 =====================================================================
@@ -82,3 +110,23 @@ Test summary
 Backup... 100% complete
 Backup past deadline by 340 days, 8 hours, 16 minutes, and 54 seconds
 Backup successful for user: ____
+    
+
+$ python3 ok -q double_eights
+=====================================================================
+Assignment: Lab 1
+OK, version v1.18.1
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    1 test cases passed! No cases failed.
+
+Backup... 33.33% complete
+
+
+
+
