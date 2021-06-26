@@ -1,0 +1,24 @@
+1.6 Higher-Order Functions -Notes: 
+开篇说明了程序中的抽象函数的意义所在：
+  如果没有抽象层面的函数function，那么我们只能进行在语言中的最基本的层面进行工作。程序可以进行平方的运算，但是如果不从抽象意义上定义平方，那么我们将无法表达平方这个概念。
+
+1.6.3 Defining Functions III: Nested Definitions
+--> 求黄金比例phi时，仅需要一个变量guess，该变量guess从1开始，之后循环重复计算guess=1/guess+1，便能得到phi值；
+--> 求平方差时，首先需要一个变量a，求a的平方差，但是没有仅凭a一个值就可以循环计算出其平方差的方法。计算a的平方差的循环方法是求x与a/x的均值，因此还需要一个新的变量x，因此说求平方差需要输入两个变量，因而不能与原始的improve函数兼容。
+improve函数需要1个变量，求平方差需要2个变量，为了解决此除不兼容点，使用嵌套函数。
+
+1.6.5 Example: Newton's Method：
+牛顿迭代法，是用来求解复杂方程的根的方法。设r为方程f(x)的根，取随机点x0，做（x0, f(x0))的切线，切线与X轴相交的点为x1，做（x1, f(x1))的切线，切线与X轴相交的点为x2，重复上述过程，最终xn将收敛（？）至方程根r。
+
+1.6.6 Currying
+柯里化，用于将多个参数的函数转化为一连串仅接受单个参数的函数。
+基本：手动转化
+推广1：自动柯里化
+推广2：逆柯里化
+
+1.6.7 Lambda Expressions
+lambda                 x            :          f(g(x))
+"A function that    takes x    and returns     f(g(x))"
+
+1.6.8   Abstractions and First-Class Functions
+1.6.9   Function Decorators
