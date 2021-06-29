@@ -1,0 +1,16 @@
+递归方法的理念在于，将问题拆解为更简单问题，并能循环应用。用这种方法解决或理解某些问题很有效。
+此章介绍递归包括：互递归、树状递归
+-->互递归：A中调用B，B中调用A
+-->树状递归：其中一个函数多次调用自身
+
+比较复杂的树状递归的一例，同时也很好地解释了“将问题拆解为更简单问题，并能循环应用”：分区Partitions
+>>> def count_partitions(n, m):
+        """Count the ways to partition n using parts up to m."""
+        if n == 0:
+            return 1
+        elif n < 0:
+            return 0
+        elif m == 0:
+            return 0
+        else:
+            return count_partitions(n-m, m) + count_partitions(n, m-1)
