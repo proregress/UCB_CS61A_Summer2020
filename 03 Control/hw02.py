@@ -86,6 +86,32 @@ def product_using_accumulate(n, term):
     return accumulate(mul, 1, n, term)
 
 # Q3: Make Repeater
+"""
+隐藏函数 lambda i : func，表示不管输入数字i为几，返回结果都是func函数
+"""
+def make_repeater(func, n):
+    """Return the function that computes the nth application of func.
+
+    >>> add_three = make_repeater(increment, 3)
+    >>> add_three(5)
+    8
+    >>> make_repeater(triple, 5)(1) # 3 * 3 * 3 * 3 * 3 * 1
+    243
+    >>> make_repeater(square, 2)(5) # square(square(5))
+    625
+    >>> make_repeater(square, 4)(5) # square(square(square(square(5))))
+    152587890625
+    >>> make_repeater(square, 0)(5) # Yes, it makes sense to apply the function zero times!
+    5
+    """
+    "*** YOUR CODE HERE ***"
+    return accumulate(compose1, lambda x : x, n, lambda i : func) 
+
+def compose1(func1, func2):
+    """Return a function f, such that f(x) = func1(func2(x))."""
+    def f(x):
+        return func1(func2(x))
+    return f
 
   
   
@@ -143,3 +169,16 @@ Running tests
 Test summary
     1 test cases passed! No cases failed.
 
+    
+$ python3 ok -q make_repeater
+=====================================================================
+Assignment: Homework 2
+OK, version v1.18.1
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    1 test cases passed! No cases failed.
